@@ -8,7 +8,7 @@ class Post
     @@all << self
   end
 
-#why do you need self here? isn't it obvious we are acting on the post? why can't we just say  if post.author == nil
+#why do you need self here? isn't it obvious we are acting on the post? why can't we just say  if post.author == nil for reusability
   def author_name
     if self.author == nil
       return nil
